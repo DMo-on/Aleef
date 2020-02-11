@@ -1,0 +1,39 @@
+app:  Ce dossier represente l'application Django, il est organise automatiquement par le framework
+      Les templates se situent au niveau de : server/templates
+      Les models se situent au niveau de : api/models.py
+
+CapturesEcran: Ce Dossier contient les screenshorts
+
+frontend:Ce dossier contient principalement les .vue et les fonctions .js
+
+Lexicon:  Ce Dossier contient les anciens lexicons :
+            - ArNameLexicon.txt
+            - NELexicon.txt
+            - NELexicon31old.txt
+          Ainsi que les nouveaux lexicons apres enrichissement :
+            - ArNameLexicon2019.txt
+            - NE_Lexicon_2019.txt
+
+          Les fichiers .pkl permettent l'acces rapide à partir de python
+          (toutes modifications sur les fichiers pkl sera appliqué aux fichiers .txt)
+
+          lexicon.py : Contient le code d'enrichissement des lexicons
+
+Model:Ce dossier contient :
+        Model.py 
+	|___ Classe corpus : classe de lecture des corpus et transformation
+	|___ Classe Model : classe ou s'effectue l'ensemble des traitements (viterbi, modele du langage)
+
+        Fichiers dont le nom commence par corpus_wik : Repreentation pkl du corpus
+        Lexicons : identique a ceux présents dans le dossier Lexicon (voir Lexicon/ReadMe.txt)
+        affix.txt : fichier de sortie contenant la phrase segmenté
+        raw.txt : fichier de sortie contenant la phrase non segmenté
+        out.txt : fichier de sortie contenant les couples mot/tag
+        tests.txt : fichier de sortie de la phase de tests
+
+NewsPaper:
+   Scrape.py : le script qui collecte les articles de presses
+   News: Dossier contenant des dossiers qui porte comme nom le titre de l'article qui y sauvegarde
+
+TAL:
+  c'est l'environnement virtuel

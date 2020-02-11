@@ -1,0 +1,4 @@
+Nous n'avons pas inclus l'environnement virtuel, car il prenait trop de place.
+
+Pour le creer c'est simple il suffit de se positionner dans le dossier courant puis: 
+   dans l'invide de commande: python virtualenv TAL
